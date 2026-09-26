@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zubair · Designer &amp; Developer</title>
+  <meta name="description" content="Zubair is a designer and developer who designs and builds clean, useful web apps, from Figma mockups to React, Node.js and Python code." />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="canonical" href="https://zubair9590-svg.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Zubair · Designer & Developer" />
+  <meta property="og:description" content="I design and build clean, useful digital products." />
+  <meta property="og:url" content="https://zubair9590-svg.github.io/" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/334239635?v=4" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply the saved theme and accent before first paint to avoid a flash.
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var theme = localStorage.getItem('portfolio:theme');
+        if (!theme) theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        root.dataset.theme = theme;
+        var accent = JSON.parse(localStorage.getItem('portfolio:accent') || 'null');
+        if (accent) {
+          root.style.setProperty('--accent', accent.accent);
+          root.style.setProperty('--accent-2', accent.accent2);
+          root.style.setProperty('--on-accent', accent.onAccent);
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Zubair, back to top">
+        <span class="logo-mark" aria-hidden="true">Z</span>
+        <span class="logo-text">Zubair</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+        </button>
+        <button class="icon-button menu-button" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= Hero ================= -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span> Open to collaboration</p>
+          <h1>I <span class="gradient-text">design</span> and <span class="gradient-text">build</span> clean, useful digital products.</h1>
+          <p class="lead">Hi, I'm Zubair, a designer and developer. I take ideas from the first sketch in Figma to fast, accessible web apps built with React, Node.js and Python.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">View my work</a>
+            <a class="button button-ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero-links" aria-label="Elsewhere">
+            <li>
+              <a href="https://github.com/zubair9590-svg" target="_blank" rel="noopener">
+                <svg class="icon icon-fill" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" /></svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mohammedzubair9590@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow glow-1" aria-hidden="true"></div>
+          <div class="glow glow-2" aria-hidden="true"></div>
+
+          <figure class="card code-card" aria-hidden="true">
+            <div class="window-bar"><i></i><i></i><i></i><span>zubair.js</span></div>
+            <pre><code><span class="tk-kw">const</span> zubair = {
+  role: <span class="tk-str">"Designer &amp; Developer"</span>,
+  design: [<span class="tk-str">"Figma"</span>, <span class="tk-str">"Photoshop"</span>],
+  code: [<span class="tk-str">"React"</span>, <span class="tk-str">"Node.js"</span>, <span class="tk-str">"Python"</span>],
+  focus: <span class="tk-str">"clean, useful products"</span>,
+};</code></pre>
+          </figure>
+
+          <div class="card palette-card">
+            <div class="palette-head">
+              <span class="palette-title">Pick an accent</span>
+              <button class="chip-button" id="shuffle" type="button">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" /></svg>
+                Shuffle
+              </button>
+            </div>
+            <div class="swatches" id="swatches" role="group" aria-label="Accent colors for this site">
+              <button class="swatch" type="button" style="--swatch: #7c3aed" data-color="#7c3aed" aria-label="Use #7C3AED as accent"></button>
+              <button class="swatch" type="button" style="--swatch: #2563eb" data-color="#2563eb" aria-label="Use #2563EB as accent"></button>
+              <button class="swatch" type="button" style="--swatch: #0ea5a4" data-color="#0ea5a4" aria-label="Use #0EA5A4 as accent"></button>
+              <button class="swatch" type="button" style="--swatch: #f59e0b" data-color="#f59e0b" aria-label="Use #F59E0B as accent"></button>
+              <button class="swatch" type="button" style="--swatch: #e11d74" data-color="#e11d74" aria-label="Use #E11D74 as accent"></button>
+            </div>
+            <p class="palette-hint">Click a color to re-theme this site · <button class="link-button" id="reset-accent" type="button">Reset</button></p>
+          </div>
+
+          <span class="float-tag float-tag-1" aria-hidden="true">Figma</span>
+          <span class="float-tag float-tag-2" aria-hidden="true">React</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Work ================= -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Things I've designed and built</h2>
+          <p class="section-lead">Five open-source projects across UI design, front-end, back-end and systems programming. Every one is documented and tested.</p>
+        </header>
+
+        <article class="project project-featured" data-reveal>
+          <a class="project-media" href="https://zubair9590-svg.github.io/palette-studio/" target="_blank" rel="noopener" aria-label="Open the Palette Studio live demo">
+            <img src="https://zubair9590-svg.github.io/palette-studio/assets/preview.png" alt="Palette Studio showing a five-color palette with contrast ratings" width="1568" height="652" loading="lazy" />
+          </a>
+          <div class="project-body">
+            <div class="project-intro">
+              <p class="project-kicker">Design tool · Web app</p>
+              <h3>Palette Studio</h3>
+              <p>A color palette generator for designers and developers. Lock the colors you love, check WCAG contrast at a glance and export to CSS, SCSS or JSON.</p>
+            </div>
+            <div class="project-details">
+              <ul class="project-points">
+                <li>Five color-harmony modes with color locking</li>
+                <li>Live WCAG contrast rating on every swatch</li>
+                <li>Keyboard shortcuts, undo, a saved library and shareable links</li>
+              </ul>
+              <ul class="tags" aria-label="Built with"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-links">
+                <a class="button button-primary button-small" href="https://zubair9590-svg.github.io/palette-studio/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                <a class="button button-ghost button-small" href="https://github.com/zubair9590-svg/palette-studio" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-featured" data-reveal>
+          <a class="project-media" href="https://zubair9590-svg.github.io/taskflow/" target="_blank" rel="noopener" aria-label="Open the TaskFlow live demo">
+            <img src="https://raw.githubusercontent.com/zubair9590-svg/taskflow/main/assets/preview.png" alt="TaskFlow Kanban board with To do, In progress and Done columns" width="1568" height="652" loading="lazy" />
+          </a>
+          <div class="project-body">
+            <div class="project-intro">
+              <p class="project-kicker">Productivity · Web app</p>
+              <h3>TaskFlow</h3>
+              <p>A clean Kanban board for organizing work. Drag cards between columns, set priorities and due dates, and pick up right where you left off.</p>
+            </div>
+            <div class="project-details">
+              <ul class="project-points">
+                <li>Drag &amp; drop with keyboard-friendly move buttons</li>
+                <li>Search, priority filters and overdue highlighting</li>
+                <li>Dark and light themes, saved automatically</li>
+              </ul>
+              <ul class="tags" aria-label="Built with"><li>React</li><li>Vite</li><li>GitHub Actions</li></ul>
+              <div class="project-links">
+                <a class="button button-primary button-small" href="https://zubair9590-svg.github.io/taskflow/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+                <a class="button button-ghost button-small" href="https://github.com/zubair9590-svg/taskflow" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project project-small" data-reveal>
+            <div class="project-media mock mock-browser" aria-hidden="true">
+              <div class="window-bar"><i></i><i></i><i></i><span>localhost:3000</span></div>
+              <div class="mock-body">
+                <p class="mock-title">Snip long links<span>.</span></p>
+                <div class="mock-input">https://developer.mozilla.org/en-US/docs/Web/…</div>
+                <div class="mock-result"><span class="mock-link">/js-guide</span><span class="mock-count">24 clicks</span></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Back-end · REST API</p>
+              <h3>Snip</h3>
+              <p>A URL shortener with click analytics, custom aliases, input validation and a small web UI.</p>
+              <ul class="tags" aria-label="Built with"><li>Node.js</li><li>Express</li><li>node:test</li></ul>
+              <a class="text-link" href="https://github.com/zubair9590-svg/snip" target="_blank" rel="noopener">View source <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="project project-small" data-reveal>
+            <div class="project-media mock mock-terminal" aria-hidden="true">
+              <div class="window-bar"><i></i><i></i><i></i><span>expense summary</span></div>
+              <pre class="mock-code"><span class="t-dim">$</span> expense summary
+rent       <span class="t-bar">████████████</span> 899.00
+food       <span class="t-bar">██</span>           132.50
+groceries  <span class="t-bar">█</span>             64.20
+transport  <span class="t-bar">█</span>             45.00
+<span class="t-ok">Budget: 77% used, 343.31 left</span></pre>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Command-line app</p>
+              <h3>Expense Tracker CLI</h3>
+              <p>Track spending from the terminal with monthly summaries, budgets and CSV export. No dependencies.</p>
+              <ul class="tags" aria-label="Built with"><li>Python</li><li>SQLite</li><li>unittest</li></ul>
+              <a class="text-link" href="https://github.com/zubair9590-svg/expense-tracker-cli" target="_blank" rel="noopener">View source <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="project project-small" data-reveal>
+            <div class="project-media mock mock-board" aria-hidden="true">
+              <div class="board">
+                <span class="x">X</span><span class="o">O</span><span class="x">X</span>
+                <span class="o">O</span><span class="x win">X</span><span></span>
+                <span class="o">O</span><span></span><span class="x win">X</span>
+              </div>
+              <p class="board-caption">Hard mode never loses</p>
+            </div>
+            <div class="project-body">
+              <p class="project-kicker">Game · Algorithms</p>
+              <h3>Tic-Tac-Toe AI</h3>
+              <p>A terminal game with an unbeatable minimax AI, alpha-beta pruning and three difficulty levels.</p>
+              <ul class="tags" aria-label="Built with"><li>C++17</li><li>CMake</li><li>CI</li></ul>
+              <a class="text-link" href="https://github.com/zubair9590-svg/tic-tac-toe-ai" target="_blank" rel="noopener">View source <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About ================= -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about-intro" data-reveal>
+          <div class="about-avatar" aria-hidden="true">Z</div>
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">Design eye, developer hands.</h2>
+          <p>I'm Zubair. I enjoy working on both sides of a product: shaping how it looks and feels, then writing the code that makes it real.</p>
+          <p>My work usually starts in Figma with layout, type, color and contrast, and ends as a responsive, accessible app. Along the way I care about the details: clear interfaces, readable code and tests that keep everything working.</p>
+          <dl class="stats">
+            <div><dt>Open-source projects</dt><dd>5</dd></div>
+            <div><dt>Live web apps</dt><dd>2</dd></div>
+            <div><dt>Projects with CI</dt><dd>5</dd></div>
+          </dl>
+        </div>
+
+        <div class="process" data-reveal>
+          <h3>How I work</h3>
+          <ol class="steps">
+            <li>
+              <span class="step-number">01</span>
+              <div>
+                <h4>Understand</h4>
+                <p>Start with the problem and the people who have it, and agree on what "done" looks like.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <div>
+                <h4>Design</h4>
+                <p>Sketch the flows and build the interface in Figma, checking layout, color and contrast early.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <div>
+                <h4>Build</h4>
+                <p>Turn the design into clean, responsive code with React, Node.js or Python, whichever fits the job.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">04</span>
+              <div>
+                <h4>Ship &amp; improve</h4>
+                <p>Test, document and deploy with CI, then keep polishing based on feedback.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Skills ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Tools I work with</h2>
+          <p class="section-lead">From pixels to production: the design tools, languages and frameworks I use day to day.</p>
+        </header>
+
+        <div class="skill-groups">
+          <div class="skill-group" data-reveal>
+            <h3>Design</h3>
+            <ul class="skill-list">
+              <li><img src="https://skillicons.dev/icons?i=figma" alt="" width="28" height="28" loading="lazy" />Figma</li>
+              <li><img src="https://skillicons.dev/icons?i=ps" alt="" width="28" height="28" loading="lazy" />Photoshop</li>
+              <li><img src="https://skillicons.dev/icons?i=ai" alt="" width="28" height="28" loading="lazy" />Illustrator</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Front-end</h3>
+            <ul class="skill-list">
+              <li><img src="https://skillicons.dev/icons?i=html" alt="" width="28" height="28" loading="lazy" />HTML</li>
+              <li><img src="https://skillicons.dev/icons?i=css" alt="" width="28" height="28" loading="lazy" />CSS</li>
+              <li><img src="https://skillicons.dev/icons?i=js" alt="" width="28" height="28" loading="lazy" />JavaScript</li>
+              <li><img src="https://skillicons.dev/icons?i=react" alt="" width="28" height="28" loading="lazy" />React</li>
+              <li><img src="https://skillicons.dev/icons?i=vite" alt="" width="28" height="28" loading="lazy" />Vite</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Back-end</h3>
+            <ul class="skill-list">
+              <li><img src="https://skillicons.dev/icons?i=nodejs" alt="" width="28" height="28" loading="lazy" />Node.js</li>
+              <li><img src="https://skillicons.dev/icons?i=express" alt="" width="28" height="28" loading="lazy" />Express</li>
+              <li><img src="https://skillicons.dev/icons?i=python" alt="" width="28" height="28" loading="lazy" />Python</li>
+              <li><img src="https://skillicons.dev/icons?i=sqlite" alt="" width="28" height="28" loading="lazy" />SQLite</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Languages &amp; systems</h3>
+            <ul class="skill-list">
+              <li><img src="https://skillicons.dev/icons?i=c" alt="" width="28" height="28" loading="lazy" />C</li>
+              <li><img src="https://skillicons.dev/icons?i=cpp" alt="" width="28" height="28" loading="lazy" />C++</li>
+              <li><img src="https://skillicons.dev/icons?i=java" alt="" width="28" height="28" loading="lazy" />Java</li>
+              <li><img src="https://skillicons.dev/icons?i=cmake" alt="" width="28" height="28" loading="lazy" />CMake</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Workflow</h3>
+            <ul class="skill-list">
+              <li><img src="https://skillicons.dev/icons?i=git" alt="" width="28" height="28" loading="lazy" />Git</li>
+              <li><img src="https://skillicons.dev/icons?i=github" alt="" width="28" height="28" loading="lazy" />GitHub</li>
+              <li><img src="https://skillicons.dev/icons?i=githubactions" alt="" width="28" height="28" loading="lazy" />GitHub Actions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's build something <span class="gradient-text">together</span>.</h2>
+          <p>Have a project in mind, a question about my work, or just want to say hi? My inbox is always open.</p>
+          <div class="contact-actions">
+            <a class="button button-primary button-large" href="mailto:mohammedzubair9590@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+              Say hello
+            </a>
+            <button class="button button-ghost button-large" id="copy-email" type="button" data-email="mohammedzubair9590@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" /><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1" /></svg>
+              Copy email
+            </button>
+          </div>
+          <p class="contact-email">mohammedzubair9590@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Zubair. Designed and built with HTML, CSS and JavaScript.</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
