@@ -1068,17 +1068,23 @@ ol {
    Skills
    ========================================================================== */
 
+/* Six-column grid: three cards on the first row, two wider cards on the second. */
 .skill-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
 .skill-group {
+  grid-column: span 2;
   padding: 26px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--surface);
+}
+
+.skill-group:nth-child(n + 4) {
+  grid-column: span 3;
 }
 
 .skill-group h3 {
@@ -1267,8 +1273,18 @@ ol {
     gap: 32px;
   }
 
-  .project-grid {
+  .project-grid,
+  .skill-groups {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-group,
+  .skill-group:nth-child(n + 4) {
+    grid-column: auto;
+  }
+
+  .skill-group:last-child {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1307,6 +1323,7 @@ ol {
   }
 
   .project-grid,
+  .skill-groups,
   .stats {
     grid-template-columns: 1fr;
   }
